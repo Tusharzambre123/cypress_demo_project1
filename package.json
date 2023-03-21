@@ -1,0 +1,31 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "Automation Testing on Cypress Tool",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "echo I am the PreTest",
+    "test": "echo This is Test",
+    "posttest": "echo I am PostTest",
+    "hello": "Hello World",
+    "cy-test": "npm run hello --"
+  },
+  "keywords": [],
+  "author": "Tushar",
+  "license": "ISC",
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.2",
+    "@cypress/browserify-preprocessor": "latest",
+    "cypress-downloadfile": "^1.2.3"
+  },
+  "devDependencies": {
+    "cy-verify-downloads": "^0.1.11",
+    "cypress": "^10.11.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-mochawesome-reporter": "^3.3.0",
+    "cypress-real-events": "^1.7.1",
+    "cypress-xpath": "^2.0.1",
+    "mochawesome": "^7.1.3"
+  }
+}

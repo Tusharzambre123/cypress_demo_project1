@@ -1,0 +1,62 @@
+/// <reference types ="cypress"/>
+
+class ProductPage
+{
+    clickOnShop()
+    {
+        return cy.get("body > app-root:nth-child(1) > app-navbar:nth-child(1) > div:nth-child(1) > nav:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1)")
+    }
+
+    selectProduct_1()
+    {
+        return cy.selectProduct("Blackberry");
+    }
+
+    selectProduct_2()
+    {
+        return cy.selectProduct("Nokia Edge")
+    }
+
+    checkoutButton_1()
+    {
+        return cy.contains("Checkout")
+    }
+
+    checkoutButton_2()
+    {
+        return cy.contains("Checkout")
+    }
+
+    selectLocation()
+    {
+        return cy.get(".suggestions> ul > li > a")
+    }
+
+    selectCheckbox()
+    {
+        return cy.get("input#checkbox2")
+    }
+
+    getOrder()
+    {
+        return cy.get("input[type='submit']")
+    }
+
+    validateText()
+    {
+        return cy.get(".alert.alert-success.alert-dismissible>strong")
+    }
+
+    closeText()
+    {
+        return cy.get("a[aria-label='close']")
+    }
+
+    validateCheckoutQuantity()
+    {
+        return cy.get('#navbarResponsive > .navbar-nav > .nav-item > .nav-link')
+    }
+
+}
+
+export default ProductPage;

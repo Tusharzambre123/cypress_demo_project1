@@ -1,0 +1,9 @@
+{
+    "name" : "Tushar Rai",
+    "email" : "tushar123@gmail.com",
+    "password" : "Tushar123",
+    "gender" : "Male",
+    "dateOfBirth" : "1996-12-03",
+    "productName" : ["iphone X", "Samsung Note 8"]
+
+}

@@ -1,0 +1,62 @@
+/// <reference types ="cypress"/>
+
+class HomePage
+{
+    getName()
+    {
+        return cy.get("input[name='name']:nth-child(2)")
+    }
+
+    getEmail()
+    {
+        return cy.get("input[name='email']")
+    }
+
+    getPassword()
+    {
+        return cy.get("input[type='password']")
+    }
+
+    getCheckbox()
+    {
+        return cy.get("input#exampleCheck1")
+    }
+
+    getGender()
+    {
+        return cy.get("select")
+    }
+
+    getStudentRadioButton()
+    {
+        return cy.get("input#inlineRadio1")
+    }
+
+    getEmployedRadioButton()
+    {
+        return cy.get("input#inlineRadio2")
+
+    }
+
+    getEnterepreneurRadioButton()
+    {
+        return cy.get("input#inlineRadio3")
+    }
+
+    getDateOfBirth()
+    {
+        return cy.get("input[type='date']")
+    }
+
+    getSubmit()
+    {
+        return cy.get("input[type='submit']")
+    }
+
+    getValidatText()
+    {
+        return cy.get('.alert.alert-success.alert-dismissible')
+    }
+}
+
+export default HomePage;
